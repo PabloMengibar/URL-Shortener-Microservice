@@ -52,7 +52,7 @@ app.get('/api/shorturl/:short_url', function(req, res) {
 
   // Verifica si el ID corto existe
   if (!originalUrls.hasOwnProperty(short_url)) {
-    return res.json({ error: 'invalid short url' });
+    return res.json({ error: 'invalid url' });
   }
 
   // Obtiene la URL original y redirige al usuario
